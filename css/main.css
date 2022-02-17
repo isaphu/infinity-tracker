@@ -1,0 +1,15 @@
+.main-logo {
+    width: min(9vw, 200px);
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 2px solid black;
+}
+
+.logo-wrapper p {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
