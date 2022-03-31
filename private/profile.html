@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Noto+Serif+Display&family=Poppins:wght@600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/profile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>InfinityTracker™ | Track your activity</title>
 </head>
@@ -18,7 +19,7 @@
     <div class="container">
         <div class="navbar-container">
             <div class="navbar">
-                <img onclick="window.location.href='activities-form.html'" src="../media/icons8-infinity-90.png"
+                <img onclick="window.location.href='./activities-form.html'" src="../media/icons8-infinity-90.png"
                     class="logo">
                 <p>InfinityTracker™</p>
                 <nav>
@@ -30,6 +31,39 @@
                     </ul>
                 </nav>
                 <img src="../media/icons8-menu-squared-50.png" class="menu-icon" onClick="toggleMenu()" />
+            </div>
+        </div>
+
+        <div class="user-container">
+            <div class="user-inner-element">
+                <div class="user-title">Hi! (user-name)</div>
+                <form action="#">
+                    <div class="user-details">
+                        <div class="personal-info-box">
+                            <span class="personal-details">Full Name</span>
+                            <input type="text" value="Isa Phuyuthanon" required>
+                        </div>
+                        <div class="personal-info-box">
+                            <span class="personal-details">Birthday</span>
+                            <input type="date" value="1994-06-02" required>
+                        </div>
+                        <div class="personal-info-box">
+                            <span class="personal-details">Gender</span>
+                            <input type="text" value="Male" required>
+                        </div>
+                        <div class="personal-info-box">
+                            <span class="personal-details">Email</span>
+                            <input type="text" value="4isapoul@gmail.com" required>
+                        </div>
+                        <div class="personal-info-box">
+                            <span class="personal-details">Password</span>
+                            <input type="password" value="brightcode" required>
+                        </div>
+                    </div>
+                    <div class="user-button">
+                        <input type="submit" value="UPDATE" />
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -50,7 +84,7 @@
                         <h4>Contact Info</h4>
                         <p><img src="../media/icons8-location-50.png" width="15px"> 3929 Paradise Lane Riverside</br>CA California 92501</p>
                         <p><img src="../media/icons8-phone-50.png" width="15px"> 909-690-8838</p>
-                        <p><img src="../media/icons8-email-64.png" width="15px"> contact@infinitytracker.com</p>
+                        <p><img src="../media/icons8-email-64.png" width="15px"> contact@it.com</p>
                     </div>
                     <div class="footer-col">
                         <h4>follow us</h4>

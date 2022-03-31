@@ -1,4 +1,4 @@
-.form-container {
+.user-container {
   display: flex;
   height: 90vh;
   justify-content: center;
@@ -12,7 +12,7 @@
   );
 }
 
-.form-inner-element {
+.user-inner-element {
   max-width: 700px;
   width: 100%;
   background: #ffffff;
@@ -20,14 +20,14 @@
   border-radius: 5px;
 }
 
-.form-title {
+.user-title {
   font-size: 25px;
   font-weight: 500;
   position: relative;
   font-family: "Poppins", sans-serif;
 }
 
-.form-title::before {
+.user-title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -37,26 +37,26 @@
   background: linear-gradient(rgba(253, 29, 29, 1), rgba(252, 176, 69, 1));
 }
 
-form .activity-details {
+form .user-details {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 0 12px 0;
 }
 
-form .activity-details .input-box {
+form .user-details .personal-info-box {
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
 }
 
-.activity-details .input-box .details {
+.user-details .personal-info-box .personal-details {
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
   font-family: "Heebo", sans-serif;
 }
 
-.activity-details .input-box input {
+.user-details .personal-info-box input {
   height: 45px;
   width: 100%;
   outline: none;
@@ -69,19 +69,14 @@ form .activity-details .input-box {
   font-family: "Heebo", sans-serif;
 }
 
-select {
-  height: 45px;
-  width: 100%;
-}
-
-form .form-button {
+form .user-button {
   height: 45px;
   width: 45px 0;
 }
 
-form .form-button input[type=submit] {
+form .user-button input {
   height: 100%;
-  width: 75%;
+  width: 100%;
   color: #000;
   font-size: 18px;
   font-weight: 500;
@@ -91,28 +86,16 @@ form .form-button input[type=submit] {
   border-style: solid;
 }
 
-form .form-button input[type=reset] {
-  height: 100%;
-  width: 24%;
-  color: #000;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
-  border-style: solid;
-}
-
-form .form-button input[type=submit]:hover {
+form .user-button input:hover {
   color: #ffffff;
   background-color: #000024;
-} 
+}
 
 @media (max-width: 584px) {
-  .form-inner-element {
+  .user-inner-element {
     max-width: 100%;
   }
-  form .activity-details .input-box {
+  form .user-details .personal-info-box {
     margin-bottom: 15px;
     width: 100%;
   }
