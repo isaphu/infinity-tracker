@@ -74,11 +74,6 @@
   row-gap: 0.5rem;
 }
 
-.recommend-storie_headline {
-  color: black;
-  font-size: 0.75rem;
-}
-
 .recommend-storie_title {
   color: black;
   font-size: 1.5rem;
@@ -124,8 +119,8 @@
     grid-template-columns: 1fr;
   }
   .other-storie_card {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .other-storie_card:not(:first-child) {
     border-top: 1px solid lightgray;
