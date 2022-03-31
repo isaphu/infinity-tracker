@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="./media/infinity-favicon2.webp" />
+    <link rel="shortcut icon" type="image/x-icon" href="../media/infinity-favicon2.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Noto+Serif+Display&family=Poppins:wght@600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/activities-form.css">
-    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="../css/activities-form.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>InfinityTracker™ | Track your activity</title>
 </head>
@@ -19,26 +19,57 @@
     <div class="container">
         <div class="navbar-container">
             <div class="navbar">
-                <img onclick="window.location.href='activities-form.html'" src="./media/icons8-infinity-90.png"
+                <img onclick="window.location.href='activities-form.html'" src="../media/icons8-infinity-90.png"
                     class="logo">
                 <p>InfinityTracker™</p>
                 <nav>
                     <ul id="menuList">
                         <li><a href="./activities-form.html">CREATE ACTIVITY</a></li>
                         <li><a href="./dashboard.html">DASHBOARD</a></li>
-                        <li><a href="#">SIGN OUT</a></li>
+                        <li><a href="#">SIGN OUT <img src="../media/icons8-arrow-50.png" width="15px" height="12px"></a></li>
                     </ul>
                 </nav>
-                <img src="./media/icons8-menu-squared-50.png" class="menu-icon" onClick="toggleMenu()" />
+                <img src="../media/icons8-menu-squared-50.png" class="menu-icon" onClick="toggleMenu()" />
             </div>
         </div>
 
-        <div class="board-wrapper">
-            <div class="board-container">
-                <div class="board-title">Dashboard</div>
-                <div class="board-card">
-
-                </div>
+        <div class="form-container">
+            <div class="form-inner-element">
+                <div class="form-title">Activity Form</div>
+                <form action="#">
+                    <div class="activity-details">
+                        <div class="input-box">
+                            <span class="details">Name</span>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Description</span>
+                            <input type="text" placeholder="Enter the description" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Activity Type</span>
+                            <select>
+                                <option disabled selected value> -- select activity -- </option>
+                                <option value="Run">Run</option>
+                                <option value="Bicycle Ride">Bicycle Ride</option>
+                                <option value="Swim">Swim</option>
+                                <option value="Walk">Walk</option>
+                                <option value="Hike">Hike</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Duration</span>
+                            <input type="time" step="3600000" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Date</span>
+                            <input type="date" required>
+                        </div>
+                    </div>
+                    <div class="form-button">
+                        <input type="submit" value="SUBMIT" />
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -47,7 +78,7 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col">
-                        <h4><a href="./activities-form.html"> <img src="./media/icons8-infinity-90.png"
+                        <h4><a href="./activities-form.html"> <img src="../media/icons8-infinity-90.png"
                                     style="width: 3rem;"></a></h4>
                         <ul>
                             <li><a href="./activities-form.html">CREATE ACTIVITY</a></li>
