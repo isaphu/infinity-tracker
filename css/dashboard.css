@@ -1,0 +1,50 @@
+.board-container {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: radial-gradient(
+    circle,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.board-inner-element {
+  max-width: 700px;
+  width: 100%;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.board-title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.board-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(rgba(253, 29, 29, 1), rgba(252, 176, 69, 1));
+}
+
+.board-activity {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 12px 0;
+}
+
+.board-activity-card {
+    border: 1px solid black;
+    margin: 15px 0;
+    display: flex;
+}
