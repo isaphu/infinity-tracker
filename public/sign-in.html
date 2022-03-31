@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../media/infinity-favicon2.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Noto+Serif+Display&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>InfinityTracker™ | Track your activity</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-container">
+            <div class="navbar">
+                <img onclick="window.location.href='activities-form.html'" src="../media/icons8-infinity-90.png" class="logo">
+                <p>InfinityTracker™</p>
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="./home.html">InfinityTracker™</a></li>
+                        <li><a href="./sign-in.html">SIGN IN <img src="../media/icons8-enter-96.png" width="15px" height="12px"></a></li>
+                    </ul>
+                </nav>
+                <img src="../media/icons8-menu-squared-50.png" class="menu-icon" onClick="toggleMenu()" />
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4><a href="./activities-form.html"> <img src="../media/icons8-infinity-90.png"
+                                    style="width: 3rem;"></a></h4>
+                        <ul>
+                            <li><a href="./home.html">InfinityTracker™</a></li>
+                            <li><a href="./sign-in.html">SIGN IN</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // on the mobile the menuList will high onclick by using below function called toggleMenu()
+        var menuList = document.getElementById("menuList");
+
+        //this will add zero pixel maximum height
+        menuList.style.maxHeight = "0px"
+
+        /* in this function I will firstly check if the maximum 
+        height is zero, it will add 130 pixels otherwise maximum height is zero */
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px"
+            } else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>
