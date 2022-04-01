@@ -7,11 +7,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 100px 0;
-}
-
-.row-inner-element {
-  flex-direction: column-reverse;
   margin: 50px 0;
 }
 
@@ -50,6 +45,17 @@
   position: absolute;
   left: -40px;
   top: 8px;
+}
+
+.col-2 {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.col-2 .subs-icon {
+  width: 100%;
 }
 
 .info-sign-up-btn {
@@ -171,10 +177,15 @@
   grid-area: other-storie;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 1rem 8%;
 }
 
 .other-storie_card:not(:first-of-type) {
   border-left: 1px solid lightgray;
+}
+
+.other-storie_title {
+  font-family: "Poppins", sans-serif;
 }
 
 .other-storie_card {
@@ -207,5 +218,43 @@
   .other-storie_card:not(:first-child) {
     border-top: 1px solid lightgray;
     border-left: unset;
+  }
+  .row-inner-element {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+  .col-2 {
+    flex-basis: 100;
+    margin-bottom: 50px;
+  }
+  .col-2 .subs-icon {
+    width: 100%;
+  }
+  .color-box {
+    border-radius: 0 0 0 30px;
+    height: 100%;
+    width: 35%;
+    transform: translateX(75px);
+  }
+  .rates-btn img {
+    width: 25px;
+    margin-bottom: 3px;
+  }
+  .rates-btn {
+    font-size: smaller;
+    text-align: center;
+    margin: 50px 35px 35px 0;
+  }
+  .col-1 {
+    flex-basis: 100%;
+  }
+  .col-1 h2 {
+    font-size: 25px;
+  }
+  .col-1 h3 {
+    font-size: 15px;
+  }
+  .other-storie_title {
+    font-size: large;
   }
 }
