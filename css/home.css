@@ -188,6 +188,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+.other-storie_paragraph {
+  text-align: justify;
+  font-family: "Heebo", sans-serif;
+}
+
 .other-storie_card {
   padding: 1rem;
 }
