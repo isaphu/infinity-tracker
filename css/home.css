@@ -203,6 +203,10 @@
   row-gap: 0.5rem;
 }
 
+.other-storie_card b {
+  font-family: "Poppins", sans-serif;
+}
+
 @media only screen and (max-width: 640px) {
   .slide_inner {
     padding-left: 0.6rem;
