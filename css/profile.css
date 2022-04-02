@@ -1,6 +1,6 @@
 .user-container {
   display: flex;
-  height: 90vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -81,7 +81,6 @@ form .user-button input {
   font-size: 18px;
   font-weight: 500;
   border-radius: 5px;
-  letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
   border-style: solid;
 }
