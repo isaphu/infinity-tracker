@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-content {
+    margin-top: 89px;
+    padding: 2rem 1.5rem;
+    background: radial-gradient(
+        circle,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+      );
+    min-height: calc(100vh - 90px);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+
+.card-single {
+    display: flex;
+    justify-content: space-between;
+    background: #ffff;
+    padding: 2rem;
+    border-radius: 3px;
+}
+
+.card-single div:last-child span {
+    font-size: 2rem;
+    color: #000024
+}
+
+.card-single div:first-child span {
+    color: #8390a2
+}
+
+.card-single:last-child {
+    background: #000024;
+} 
+
+.card-single:last-child h1,
+.card-single:last-child div:first-child span,
+.card-single:last-child div:last-child span {
+    color: #ffff
+}
