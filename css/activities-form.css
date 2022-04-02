@@ -103,6 +103,11 @@ form .form-button input[type=submit] {
   border-style: solid;
 }
 
+form .form-button input[type=reset]:hover {
+  color: #ffffff;
+  background-color: #adb0b5;
+} 
+
 form .form-button input[type=submit]:hover {
   color: #ffffff;
   background-color: #000024;
