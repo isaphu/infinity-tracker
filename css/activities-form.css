@@ -76,29 +76,29 @@ select {
 
 form .form-button {
   height: 45px;
-  width: 45px 0;
-}
-
-form .form-button input[type=submit] {
-  height: 100%;
-  width: 75%;
-  color: #000;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
-  border-style: solid;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
 }
 
 form .form-button input[type=reset] {
   height: 100%;
-  width: 24%;
+  flex: 1;
   color: #000;
   font-size: 18px;
   font-weight: 500;
   border-radius: 5px;
-  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  border-style: solid;
+}
+
+form .form-button input[type=submit] {
+  height: 100%;
+  flex: 3;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
   font-family: "Poppins", sans-serif;
   border-style: solid;
 }
