@@ -87,8 +87,7 @@
 
 .card-body td button,
 .card-header button {
-  /* background: #fff; */
-  border-radius: 10px;
+  border-radius: 5px;
   color: #000240;
   font-size: 0.8rem;
   padding: 0.5rem 1rem;
@@ -179,6 +178,7 @@ tbody td {
   .card-single h1 {
     font-size: 20px;
   }
+  
 }
 
 @media only screen and (max-width: 560px) {
